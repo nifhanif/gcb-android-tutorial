@@ -6,7 +6,7 @@ steps:
     path: '/hasil_build'
   args: ['cp', '-a', '.', '/hasil_build']
   
-# Build APK with Gradle Image from mounted /persistent_volume using name: vol1
+# Build APK with Gradle Image from mounted /hasil_build using name: vol1
 - name: 'gcr.io/cloud-builders/docker'
   volumes:
   - name: 'vol1'
